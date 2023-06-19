@@ -32,8 +32,7 @@ function GetfetchCatByBreed() {
   loader_txt.classList.remove("isHidden");
   fetchCatByBreed(selectedValue).then((data) => {
     selectedCat = data[0];
-    selectedCatDate = selectedCat.breeds[0];
-    UpdateCat(CreateMarkup(selectedCatDate, selectedCat));
+    UpdateCat(CreateMarkup(selectedCat.breeds[0], selectedCat));
     loader_txt.classList.add("isHidden");
 
     }).catch(onError);
