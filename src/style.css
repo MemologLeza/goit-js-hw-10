@@ -1,0 +1,15 @@
+.isHidden {
+  display: none;
+}
+.img {
+  max-width: 300px;
+  display: block;
+}
+.cat-info {
+  display: flex;
+  gap: 30px;
+  margin-top: 30px;
+}
+.error {
+  color: red;
+}
