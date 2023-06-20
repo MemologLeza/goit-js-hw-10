@@ -30,6 +30,7 @@ function GetfetchCatByBreed() {
     const selectedValue = breed_select.value;
   let selectedCat;
   loader_txt.classList.remove("isHidden");
+  error_txt.classList.add("isHidden");
   fetchCatByBreed(selectedValue).then((data) => {
     selectedCat = data[0];
     UpdateCat(CreateMarkup(selectedCat.breeds[0], selectedCat));
